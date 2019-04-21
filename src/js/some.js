@@ -24,6 +24,13 @@ stars.on("click", function() {
 		$(this).toggleClass('close');
 		$('.header-nav__list.mobile-nav').toggleClass('close');
 	});
+	$(window).resize(function() {
+		var width = $(window).width();
+			if (width >= 991) {
+				$('.header-nav__list.mobile-nav').addClass('close');
+				$('.burger-link').removeClass('close');
+			}
+	});
 
 	
 

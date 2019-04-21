@@ -1,0 +1,126 @@
+.footer
+	padding: 38px 0
+	color: #fff
+	background: $footer-bg
+	&-row
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		&:first-child
+			padding-bottom: 25px
+			margin-bottom: 25px
+			border-bottom: 1px solid #494e56
+		.popular-countries
+			margin-right: auto
+			text-transform: uppercase
+			&__title
+				margin-bottom: 15px
+				+plbold
+			&__list
+				display: flex
+				flex-wrap: wrap
+				max-width: 190px
+				margin: 0 -6px
+				padding: 0
+				list-style-type: none
+				li
+					margin: 0 6px 15px 6px
+					a
+						color: #fff
+						text-decoration: none
+						+trs
+						&:hover
+							color: lighten($text-color, 10%)
+		.collection-tours
+			text-transform: uppercase
+			margin-left: auto
+			&__title
+				margin-bottom: 15px
+				+plbold
+			&__list
+				display: flex
+				flex-wrap: wrap
+				max-width: 315px
+				margin: 0 -6px
+				padding: 0
+				list-style-type: none
+				li
+					margin: 0 6px 15px 6px
+					a
+						color: #fff
+						font-size: 13px
+						text-decoration: none
+						+trs
+						&:hover
+							color: lighten($text-color, 10%)
+	&-nav
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			li
+				margin-bottom: 10px
+				a
+					color: #fff
+					text-decoration: none
+					+plbold
+					+trs
+					text-transform: uppercase
+					&:hover
+						color: lighten($text-color, 10%)
+	&-address
+		margin-right: auto
+		&__office
+			margin-bottom: 10px
+			span
+				display: block
+				margin: 0 0 10px 0
+				color: lighten($text-color, 20%)
+		&__link
+			display: inline-block
+			color: #fff
+			text-decoration: none
+			border-bottom: 1px dashed #fff
+			+trs
+			&:hover
+				border-bottom: 1px solid transparent
+	&-copy
+		margin-right: auto
+		margin-left: 54px
+		color: lighten($text-color, 20%)
+		.copy
+			margin-bottom: 10px
+		a
+			color: lighten($text-color, 20%)
+			+trs
+			&:hover
+				text-decoration: none
+	&-sociate
+		margin-right: 139px
+		ul
+			display: flex
+			margin: 0 0 10px 0
+			padding: 0
+			list-style-type: none
+			li
+				margin-right: 22px
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 36px
+					height: 36px
+					font-size: 25px
+					background: $red
+					color: #fff
+					border-radius: 5px
+					text-decoration: none
+					+plbold
+					+trs
+					&:hover
+						background: #fff
+						color: $red
+	&-subscribe
+		color: lighten($text-color, 20%)
+		&:hover
+			text-decoration: none

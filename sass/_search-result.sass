@@ -1,0 +1,222 @@
+.search-result
+	&__header
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 16px
+	&__info
+		color: #010101
+		+mpreg
+		font-size: 24px
+		font-weight: 400
+		span
+			+plbold
+	&__filter
+		margin-left: auto
+		ul
+			display: flex
+			margin: 0
+			padding: 0
+			border: 1px solid $breadcrumbs
+			list-style-type: none
+			li
+				a
+					display: block
+					padding: 5px 10px
+					border-right: 1px solid $breadcrumbs
+					color: $breadcrumbs
+					+mpreg
+					+trs
+					text-decoration: none
+					&:hover
+						color: darken($breadcrumbs, 30%)
+				&:last-child
+					a
+						border-right: none
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin: 0 -13px
+		padding: 0
+		list-style-type: none
+		& > li
+			position: relative
+			display: flex
+			flex-direction: column
+			width: 330px
+			min-height: 416px
+			margin: 0 13px 18px 13px
+			box-sizing: border-box
+			.front,
+			.back
+				display: flex
+				flex-direction: column
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				padding-bottom: 15px
+				transition: all 1s
+				backface-visibility: hidden
+				box-sizing: border-box
+			.front
+				width: 330px
+				min-height: 394px
+				box-shadow: 0 0 20px rgba(5, 6, 6, 0.05)
+				border: 1px solid #efe2f4
+				background: #ffffff
+				transform: perspective(600px) rotateY(0deg)
+				&-photo
+					position: relative
+					max-width: 310px
+					margin: 10px auto 10px auto
+					overflow: hidden
+				&-rating
+					position: absolute
+					right: 0
+					top: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 75px
+					height: 27px
+					margin: 0
+					padding: 0
+					list-style-type: none
+					background: #fff
+					li
+						width: 12px
+						min-height: auto
+						margin: 0
+						padding: 0
+						font-size: 11px
+						&.current
+							color: $red
+				&-info
+					padding: 0 24px
+				&-hotel
+					min-height: 32px
+					margin-bottom: 23px
+					font-size: 14px
+					text-transform: uppercase
+					+mpreg
+					span
+						color: #000
+						+plbold
+				&-cost
+					display: flex
+					align-items: flex-end
+					margin-bottom: 40px
+					.new-cost
+						margin-right: 15px
+						font-size: 32px
+						+plbold
+						color: $red
+						i
+							font-size: 26px
+					.last-cost
+						font-size: 18px
+						text-decoration: line-through
+				&-resume
+					display: flex
+					justify-content: center
+					margin: auto -0.5px 0 -0.5px
+					padding: 0
+					list-style-type: none
+					li
+						width: 103px
+						min-height: auto
+						padding: 10px
+						margin: 0 0.5px
+						+mpreg
+						text-align: center
+						background-color: #f9f8f8
+						box-sizing: border-box
+			.back
+				width: 330px
+				min-height: 394px
+				padding: 30px 24px 25px 27px
+				background-color: $red
+				border: 1px solid $red
+				transform: perspective(600px) rotateY(180deg)
+				box-sizing: border-box
+				&-rating
+					display: flex
+					margin: 0 0 23px 0
+					padding: 0
+					list-style-type: none
+					li
+						min-height: auto
+						width: 15px
+						margin: 0
+						padding: 0
+						color: #ed8f93
+						&.current
+							color: #fff
+				&-hotel
+					display: flex
+					flex-direction: column
+					margin-bottom: 36px
+					color: #fff
+					text-transform: uppercase
+					&__name
+						margin-bottom: 15px
+						font-size: 24px
+						+plbold
+				&-resume
+					display: flex
+					flex-wrap: wrap
+					justify-content: center
+					margin: 0 -3.5px 30px -3.5px
+					padding: 0
+					list-style-type: none
+					&__item
+						position: relative
+						width: 135px
+						min-height: 51px
+						padding: 0 0 0 32px
+						margin: 0 3.5px 6px 3.5px
+						color: #fefefe
+						line-height: 51px
+						background: #ee3c43
+						box-sizing: border-box
+						i
+							margin-right: 10px
+				&-footer
+					display: flex
+					align-items: center
+					color: #fff
+					&__cost
+						display: flex
+						flex-direction: column
+						.new-cost
+							font-size: 32px
+							+plbold
+							i
+								font-size: 26px
+						.last-cost
+							font-size: 18px
+							text-decoration: line-through
+					&__link
+						display: block
+						width: 115px
+						height: 46px
+						margin-left: auto
+						color: #fff
+						text-align: center
+						line-height: 46px
+						border: 1px solid #ffffff
+						border-radius: 5px
+						background-color: #ed1c24
+						text-decoration: none
+						text-transform: uppercase
+						+trs
+						&:hover
+							border: 1px solid #ee3c43
+							background-color: #ee3c43
+			&:hover
+				.front
+					transform: perspective(600px) rotateY(180deg)
+				.back
+					transform: perspective(600px) rotateY(360deg)

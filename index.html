@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tour</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="build/css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="burger-link">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="container">
+			<div class="header-search">
+				<form action="#">
+					<input type="text" placeholder="поиск ...">
+					<button></button>
+				</form>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-nav__list">
+					<li>
+						<a class="current" href="#">туристам</a>
+					</li>
+					<li>
+					<a href="#">информация</a>
+					</li>
+					<li>
+						<a href="#">агентам</a>
+					</li>
+					<li>
+						<a href="#">контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header-contact">
+				<div class="city">
+					Ваш город: <span>Екатеринбург</span>
+				</div>
+				<a href="tel:734333431111" class="header-contact__link">+7 (343)  334311-11</a>
+			</div>
+		</div> <!-- /container -->
+		<ul class="header-nav__list mobile-nav close">
+			<li>
+				<div class="header-search header-search-mobile">
+					<form action="#">
+						<input type="text" placeholder="поиск ...">
+						<button></button>
+					</form>
+				</div>
+			</li>
+			<li>
+				<a href="#">туристам</a>
+			</li>
+			<li>
+			<a href="#">информация</a>
+			</li>
+			<li>
+				<a href="#">агентам</a>
+			</li>
+			<li>
+				<a href="#">контакты</a>
+			</li>
+		</ul> <!-- mobile-nav -->
+	</header> <!-- /header -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Туристам</a></li>
+				<li class="current">Горящие туры</li>
+			</ul>
+		</div>
+	</div>
+	<section class="tours-search">
+		<div class="container">
+			<h1 class="page-title">
+				Горящие туры
+			</h1>
+			<div class="tours-search__box">
+				<form action="#" class="tours-search__form">
+					<div class="form-control">
+						<label for="city">Город вылета</label>
+						<input id="city" name="city" type="text">
+					</div> <!--/.form-control  -->
+					<div class="form-control">
+						<label for="country">Список стран</label>
+						<input id="country" name="city" type="text">
+					</div> <!--/.form-control  -->
+					<div class="form-control">
+						<label for="resort">Курорт</label>
+						<input id="resort" name="city" type="text">
+					</div> <!--/.form-control  -->
+					<div class="form-control">
+						<label for="time">Максимальное количество дней</label>
+						<input id="time" name="city" type="text">
+					</div> <!--/.form-control  -->
+					<div class="form-control">
+						<label for="city">Категория отеля</label>
+						<div class="rating">
+							<ul>
+								<li class="star__item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star__item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star__item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star__item">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star__item">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<input id="category-hotel" type="checkbox">
+							<label for="category-hotel">Или более звезд</label>
+						</div>
+					</div> <!--/.form-control  -->
+					<div class="form-control">
+						<button>Найти туры</button>
+					</div> <!--/.form-control  -->
+				</form>
+			</div> <!-- /tousrs-search__box -->
+		</div><!-- /.container -->
+	</section> <!-- /tours-search -->
+
+	<div class="search-result">
+		<div class="container">
+			<header class="search-result__header">
+				<div class="search-result__info">
+						Найдено туров: <span>34</span>
+				</div>
+				<div class="search-result__filter">
+					<ul>
+						<li><a href="#">по имени</a></li>
+						<li><a href="#">по цене</a></li>
+						<li><a href="#">по рейтингу</a></li>
+					</ul>
+				</div>
+			</header>
+			<ul class="search-result__list">
+				<li>
+					<div class="front">
+						<div class="front-photo">
+							<img src="build/img/search-result/search-result-1.jpg" alt="отель">
+							<ul class="front-rating">
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+							</ul>
+						</div> <!-- /front-photo -->
+						<div class="front-info">
+							<div class="front-hotel">
+								<span>Сан-сиро,</span> Болгария
+							</div>
+							<div class="front-cost">
+								<span class="new-cost">64 523<i class="fas fa-ruble-sign"></i></span>
+								<span class="last-cost">88 300 &#x584;</span>
+							</div>
+						</div> <!-- /front-info -->
+						<ul class="front-resume">
+							<li>Из Москвы </li>
+							<li>24 июня</li>
+							<li>7 ночей</li>
+						</ul>
+					</div> <!-- /front -->
+					<div class="back">
+						<ul class="back-rating">
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+						</ul>
+						<div class="back-hotel">
+							<span class="back-hotel__name">Сан-сиро</span>
+							<span class="back-hotel__place">Болгария</span>
+						</div>
+						<ul class="back-resume">
+							<li class="back-resume__item">
+								<i class="fas fa-map-marker-alt"></i>	Из Москвы 
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-calendar-alt"></i> 24 июня
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-moon"></i> 7 ночей
+							</li>
+							<li class="back-resume__item">
+								<i class="fas fa-utensils"></i> Завтрак
+							</li>
+						</ul>
+						<div class="back-footer">
+							<div class="back-footer__cost">
+								<span class="last-cost">88 300 &#x584;</span>
+								<span class="new-cost">64 523<i class="fas fa-ruble-sign"></i></span>
+								<span class="cost-info">с человека</span>
+							</div>
+							<a href="#" class="back-footer__link">
+								подробнее
+							</a>
+						</div>
+					</div> <!-- /back -->
+				</li>
+
+				<li>
+					<div class="front">
+						<div class="front-photo">
+							<img src="build/img/search-result/search-result-2.jpg" alt="отель">
+							<ul class="front-rating">
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+							</ul>
+						</div> <!-- /front-photo -->
+						<div class="front-info">
+							<div class="front-hotel">
+								<span>ЗОЛОТОЙ БЕРЕГ-ТЕРЛО,</span> ПИЦУНДА, 
+								АБХАЗИЯ
+							</div>
+							<div class="front-cost">
+								<span class="new-cost">85 236<i class="fas fa-ruble-sign"></i></span>
+								<span class="last-cost">96 566 &#x584;</span>
+							</div>
+						</div> <!-- /front-info -->
+						<ul class="front-resume">
+							<li>Из Москвы </li>
+							<li>24 июня</li>
+							<li>7 ночей</li>
+						</ul>
+					</div> <!-- /front -->
+					<div class="back">
+						<ul class="back-rating">
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+						</ul>
+						<div class="back-hotel">
+							<span class="back-hotel__name">ЗОЛОТОЙ БЕРЕГ-ТЕРЛО</span>
+							<span class="back-hotel__place">ПИЦУНДА, 
+									АБХАЗИЯ</span>
+						</div>
+						<ul class="back-resume">
+							<li class="back-resume__item">
+								<i class="fas fa-map-marker-alt"></i>	Из Москвы 
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-calendar-alt"></i> 24 июня
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-moon"></i> 7 ночей
+							</li>
+							<li class="back-resume__item">
+								<i class="fas fa-utensils"></i> Завтрак
+							</li>
+						</ul>
+						<div class="back-footer">
+							<div class="back-footer__cost">
+								<span class="last-cost">96 566 &#x584;</span>
+								<span class="new-cost">85 236<i class="fas fa-ruble-sign"></i></span>
+								<span class="cost-info">с человека</span>
+							</div>
+							<a href="#" class="back-footer__link">
+								подробнее
+							</a>
+						</div>
+					</div> <!-- /back -->
+				</li>
+
+				<li>
+					<div class="front">
+						<div class="front-photo">
+							<img src="build/img/search-result/search-result-3.jpg" alt="отель">
+							<ul class="front-rating">
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+							</ul>
+						</div> <!-- /front-photo -->
+						<div class="front-info">
+							<div class="front-hotel">
+								<span>ИВА ГОСТИНИЦА,</span> НОВЫЙ АФОН, АБХАЗИЯ
+							</div>
+							<div class="front-cost">
+								<span class="new-cost">75 233<i class="fas fa-ruble-sign"></i></span>
+								<span class="last-cost">85 600 &#x584;</span>
+							</div>
+						</div> <!-- /front-info -->
+						<ul class="front-resume">
+							<li>Из Москвы </li>
+							<li>24 июня</li>
+							<li>7 ночей</li>
+						</ul>
+					</div> <!-- /front -->
+					<div class="back">
+						<ul class="back-rating">
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+						</ul>
+						<div class="back-hotel">
+							<span class="back-hotel__name">ИВА ГОСТИНИЦА</span>
+							<span class="back-hotel__place">ПНОВЫЙ АФОН, АБХАЗИЯ</span>
+						</div>
+						<ul class="back-resume">
+							<li class="back-resume__item">
+								<i class="fas fa-map-marker-alt"></i>	Из Москвы 
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-calendar-alt"></i> 24 июня
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-moon"></i> 7 ночей
+							</li>
+							<li class="back-resume__item">
+								<i class="fas fa-utensils"></i> Завтрак
+							</li>
+						</ul>
+						<div class="back-footer">
+							<div class="back-footer__cost">
+								<span class="last-cost">85 600 &#x584;</span>
+								<span class="new-cost">75 233<i class="fas fa-ruble-sign"></i></span>
+								<span class="cost-info">с человека</span>
+							</div>
+							<a href="#" class="back-footer__link">
+								подробнее
+							</a>
+						</div>
+					</div> <!-- /back -->
+				</li>
+
+				<li>
+					<div class="front">
+						<div class="front-photo">
+							<img src="build/img/search-result/search-result-4.jpg" alt="отель">
+							<ul class="front-rating">
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+							</ul>
+						</div> <!-- /front-photo -->
+						<div class="front-info">
+							<div class="front-hotel">
+								<span>ДЖАНАТ,</span> СУХУМ, АБХАЗИЯ
+							</div>
+							<div class="front-cost">
+								<span class="new-cost">52 465<i class="fas fa-ruble-sign"></i></span>
+								<span class="last-cost">88 300 &#x584;</span>
+							</div>
+						</div> <!-- /front-info -->
+						<ul class="front-resume">
+							<li>Из Москвы </li>
+							<li>24 июня</li>
+							<li>7 ночей</li>
+						</ul>
+					</div> <!-- /front -->
+					<div class="back">
+						<ul class="back-rating">
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+						</ul>
+						<div class="back-hotel">
+							<span class="back-hotel__name">	ДЖАНАТ</span>
+							<span class="back-hotel__place">СУХУМ, АБХАЗИЯ</span>
+						</div>
+						<ul class="back-resume">
+							<li class="back-resume__item">
+								<i class="fas fa-map-marker-alt"></i>	Из Москвы 
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-calendar-alt"></i> 24 июня
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-moon"></i> 7 ночей
+							</li>
+							<li class="back-resume__item">
+								<i class="fas fa-utensils"></i> Завтрак
+							</li>
+						</ul>
+						<div class="back-footer">
+							<div class="back-footer__cost">
+								<span class="last-cost">88 300 &#x584;</span>
+								<span class="new-cost">52 465<i class="fas fa-ruble-sign"></i></span>
+								<span class="cost-info">с человека</span>
+							</div>
+							<a href="#" class="back-footer__link">
+								подробнее
+							</a>
+						</div>
+					</div> <!-- /back -->
+				</li>
+
+				<li>
+					<div class="front">
+						<div class="front-photo">
+							<img src="build/img/search-result/search-result-1.jpg" alt="отель">
+							<ul class="front-rating">
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+							</ul>
+						</div> <!-- /front-photo -->
+						<div class="front-info">
+							<div class="front-hotel">
+								<span>ЭВКАЛИПТ,</span> СУХУМ, АБХАЗИЯ
+							</div>
+							<div class="front-cost">
+								<span class="new-cost">85 236<i class="fas fa-ruble-sign"></i></span>
+								<span class="last-cost">96 566 &#x584;</span>
+							</div>
+						</div> <!-- /front-info -->
+						<ul class="front-resume">
+							<li>Из Москвы </li>
+							<li>24 июня</li>
+							<li>7 ночей</li>
+						</ul>
+					</div> <!-- /front -->
+					<div class="back">
+						<ul class="back-rating">
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+						</ul>
+						<div class="back-hotel">
+							<span class="back-hotel__name">	ЭВКАЛИПТ</span>
+							<span class="back-hotel__place">СУХУМ, АБХАЗИЯ</span>
+						</div>
+						<ul class="back-resume">
+							<li class="back-resume__item">
+								<i class="fas fa-map-marker-alt"></i>	Из Москвы 
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-calendar-alt"></i> 24 июня
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-moon"></i> 7 ночей
+							</li>
+							<li class="back-resume__item">
+								<i class="fas fa-utensils"></i> Завтрак
+							</li>
+						</ul>
+						<div class="back-footer">
+							<div class="back-footer__cost">
+								<span class="last-cost">96 566 &#x584;</span>
+								<span class="new-cost">85 236<i class="fas fa-ruble-sign"></i></span>
+								<span class="cost-info">с человека</span>
+							</div>
+							<a href="#" class="back-footer__link">
+								подробнее
+							</a>
+						</div>
+					</div> <!-- /back -->
+				</li>
+
+				<li>
+					<div class="front">
+						<div class="front-photo">
+							<img src="build/img/search-result/search-result-6.jpg" alt="отель">
+							<ul class="front-rating">
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+							</ul>
+						</div> <!-- /front-photo -->
+						<div class="front-info">
+							<div class="front-hotel">
+								<span>ПАРУС ПАНСИОНАТ ПИЦУНДА,</span>ГУДАУТА, АБХАЗИЯ
+							</div>
+							<div class="front-cost">
+								<span class="new-cost">75 233<i class="fas fa-ruble-sign"></i></span>
+								<span class="last-cost">85 600 &#x584;</span>
+							</div>
+						</div> <!-- /front-info -->
+						<ul class="front-resume">
+							<li>Из Москвы </li>
+							<li>24 июня</li>
+							<li>7 ночей</li>
+						</ul>
+					</div> <!-- /front -->
+					<div class="back">
+						<ul class="back-rating">
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+						</ul>
+						<div class="back-hotel">
+							<span class="back-hotel__name">ПАРУС ПАНСИОНАТ ПИЦУНДА</span>
+							<span class="back-hotel__place">ГУДАУТА, АБХАЗИЯ</span>
+						</div>
+						<ul class="back-resume">
+							<li class="back-resume__item">
+								<i class="fas fa-map-marker-alt"></i>	Из Москвы 
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-calendar-alt"></i> 24 июня
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-moon"></i> 7 ночей
+							</li>
+							<li class="back-resume__item">
+								<i class="fas fa-utensils"></i> Завтрак
+							</li>
+						</ul>
+						<div class="back-footer">
+							<div class="back-footer__cost">
+								<span class="last-cost">85 600 &#x584;</span>
+								<span class="new-cost">75 233<i class="fas fa-ruble-sign"></i></span>
+								<span class="cost-info">с человека</span>
+							</div>
+							<a href="#" class="back-footer__link">
+								подробнее
+							</a>
+						</div>
+					</div> <!-- /back -->
+				</li>
+
+				<li>
+					<div class="front">
+						<div class="front-photo">
+							<img src="build/img/search-result/search-result-7.jpg" alt="отель">
+							<ul class="front-rating">
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+							</ul>
+						</div> <!-- /front-photo -->
+						<div class="front-info">
+							<div class="front-hotel">
+								<span>АФОН ДАКИР,</span>НОВЫЙ АФОН, АБХАЗИЯ
+							</div>
+							<div class="front-cost">
+								<span class="new-cost">55 455 <i class="fas fa-ruble-sign"></i></span>
+								<span class="last-cost">88300 &#x584;</span>
+							</div>
+						</div> <!-- /front-info -->
+						<ul class="front-resume">
+							<li>Из Москвы </li>
+							<li>24 июня</li>
+							<li>7 ночей</li>
+						</ul>
+					</div> <!-- /front -->
+					<div class="back">
+						<ul class="back-rating">
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+						</ul>
+						<div class="back-hotel">
+							<span class="back-hotel__name">	АФОН ДАКИР</span>
+							<span class="back-hotel__place">НОВЫЙ АФОН, АБХАЗИЯ</span>
+						</div>
+						<ul class="back-resume">
+							<li class="back-resume__item">
+								<i class="fas fa-map-marker-alt"></i>	Из Москвы 
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-calendar-alt"></i> 24 июня
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-moon"></i> 7 ночей
+							</li>
+							<li class="back-resume__item">
+								<i class="fas fa-utensils"></i> Завтрак
+							</li>
+						</ul>
+						<div class="back-footer">
+							<div class="back-footer__cost">
+								<span class="last-cost">88 300 &#x584;</span>
+								<span class="new-cost">55 455<i class="fas fa-ruble-sign"></i></span>
+								<span class="cost-info">с человека</span>
+							</div>
+							<a href="#" class="back-footer__link">
+								подробнее
+							</a>
+						</div>
+					</div> <!-- /back -->
+				</li>
+
+				<li>
+					<div class="front">
+						<div class="front-photo">
+							<img src="build/img/search-result/search-result-8.jpg" alt="отель">
+							<ul class="front-rating">
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+							</ul>
+						</div> <!-- /front-photo -->
+						<div class="front-info">
+							<div class="front-hotel">
+								<span>АХРА ГОСТЕВОЙ ДОМ,</span>ГАГРА, АБХАЗИЯ
+							</div>
+							<div class="front-cost">
+								<span class="new-cost">54 834 <i class="fas fa-ruble-sign"></i></span>
+								<span class="last-cost">96 566 &#x584;</span>
+							</div>
+						</div> <!-- /front-info -->
+						<ul class="front-resume">
+							<li>Из Москвы </li>
+							<li>24 июня</li>
+							<li>7 ночей</li>
+						</ul>
+					</div> <!-- /front -->
+					<div class="back">
+						<ul class="back-rating">
+							<li class="current"><i class="far fa-star"></i></li>
+							<li class="current"><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+							<li><i class="far fa-star"></i></li>
+						</ul>
+						<div class="back-hotel">
+							<span class="back-hotel__name">	АХРА ГОСТЕВОЙ ДОМ</span>
+							<span class="back-hotel__place">ГАГРА, АБХАЗИЯ</span>
+						</div>
+						<ul class="back-resume">
+							<li class="back-resume__item">
+								<i class="fas fa-map-marker-alt"></i>	Из Москвы 
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-calendar-alt"></i> 24 июня
+							</li>
+							<li class="back-resume__item">
+								<i class="far fa-moon"></i> 7 ночей
+							</li>
+							<li class="back-resume__item">
+								<i class="fas fa-utensils"></i> Завтрак
+							</li>
+						</ul>
+						<div class="back-footer">
+							<div class="back-footer__cost">
+								<span class="last-cost">96 566 &#x584;</span>
+								<span class="new-cost">54 834 <i class="fas fa-ruble-sign"></i></span>
+								<span class="cost-info">с человека</span>
+							</div>
+							<a href="#" class="back-footer__link">
+								подробнее
+							</a>
+						</div>
+					</div> <!-- /back -->
+				</li>
+
+				<li>
+						<div class="front">
+							<div class="front-photo">
+								<img src="build/img/search-result/search-result-9.jpg" alt="отель">
+								<ul class="front-rating">
+									<li class="current"><i class="far fa-star"></i></li>
+									<li class="current"><i class="far fa-star"></i></li>
+									<li class="current"><i class="far fa-star"></i></li>
+									<li class="current"><i class="far fa-star"></i></li>
+									<li><i class="fas fa-star"></i></li>
+								</ul>
+							</div> <!-- /front-photo -->
+							<div class="front-info">
+								<div class="front-hotel">
+									<span>ПАРУС ПАНСИОНАТ ПИЦУНДА,</span>ГУДАУТА, АБХАЗИЯ
+								</div>
+								<div class="front-cost">
+									<span class="new-cost">55 796 <i class="fas fa-ruble-sign"></i></span>
+									<span class="last-cost">85 600 &#x584;</span>
+								</div>
+							</div> <!-- /front-info -->
+							<ul class="front-resume">
+								<li>Из Москвы </li>
+								<li>24 июня</li>
+								<li>7 ночей</li>
+							</ul>
+						</div> <!-- /front -->
+						<div class="back">
+							<ul class="back-rating">
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li class="current"><i class="far fa-star"></i></li>
+								<li><i class="far fa-star"></i></li>
+							</ul>
+							<div class="back-hotel">
+								<span class="back-hotel__name">	ПАРУС ПАНСИОНАТ ПИЦУНДА</span>
+								<span class="back-hotel__place">ГУДАУТА, АБХАЗИЯ</span>
+							</div>
+							<ul class="back-resume">
+								<li class="back-resume__item">
+									<i class="fas fa-map-marker-alt"></i>	Из Москвы 
+								</li>
+								<li class="back-resume__item">
+									<i class="far fa-calendar-alt"></i> 24 июня
+								</li>
+								<li class="back-resume__item">
+									<i class="far fa-moon"></i> 7 ночей
+								</li>
+								<li class="back-resume__item">
+									<i class="fas fa-utensils"></i> Завтрак
+								</li>
+							</ul>
+							<div class="back-footer">
+								<div class="back-footer__cost">
+									<span class="last-cost">85 600 &#x584;</span>
+									<span class="new-cost">55 796 <i class="fas fa-ruble-sign"></i></span>
+									<span class="cost-info">с человека</span>
+								</div>
+								<a href="#" class="back-footer__link">
+									подробнее
+								</a>
+							</div>
+						</div> <!-- /back -->
+					</li>
+			</ul>
+		</div> <!-- /container -->
+	</div> <!-- search-result -->
+
+	<div class="security">
+		<div class="container">
+			<h2 class="security-title">
+				Уверенность в путешествиях
+			</h2>
+			<ul class="security-list">
+				<li>
+						Сегодня Artsofte это веб-интегратор, разрабатывающий сложные программные решения и системы самообслуживания клиентов с применением мобильных и веб-технологий для финансового сектора, телекоммуникационных компаний и авиа отрасли. Также, среди наших собственных продуктов, есть лидирующие в своих отраслях облачные решения для недвижимости и автобизнеса. 
+				</li>
+				<li>
+						Сегодня Artsofte это веб-интегратор, разрабатывающий сложные программные решения и системы самообслуживания клиентов с применением мобильных и веб-технологий для финансового сектора, телекоммуникационных компаний и авиа отрасли. Также, среди наших собственных продуктов, есть лидирующие в своих отраслях облачные решения для недвижимости и автобизнеса. 
+				</li>
+				<li>
+						Сегодня Artsofte это веб-интегратор, разрабатывающий сложные программные решения и системы самообслуживания клиентов с применением мобильных и продуктов, есть лидирующие в своих отраслях облачные решения для недвижимости и автобизнеса. 
+				</li>
+			</ul>
+		</div>
+	</div> <!-- /security -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-row">
+				<div class="popular-countries">
+					<div class="popular-countries__title">
+						популярные страны
+					</div>
+					<ul class="popular-countries__list">
+						<li><a href="#">китай</a></li>
+						<li><a href="#">тайланд</a></li>
+						<li><a href="#">чехия</a></li>
+						<li><a href="#">франция</a></li>
+						<li><a href="#">греция</a></li>
+					</ul>
+				</div> <!-- /popular-countries -->
+				<nav class="footer-nav">
+					<ul>
+						<li>
+							<a href="#">о компании</a>
+						</li>
+						<li>
+							<a href="#">информация</a>
+						</li>
+						<li>
+							<a href="#">корпоративным клиентам</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="collection-tours">
+					<div class="collection-tours__title">
+						коллекции туров
+					</div>
+					<ul class="collection-tours__list">
+						 <li><a href="#">Свадебные туры</a></li>
+						 <li><a href="#">круизы</a></li>
+						 <li><a href="#">активный отдых</a></li>
+						 <li><a href="#">здоровье и спа</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-row">
+				<div class="footer-address">
+					<div class="footer-address__office">
+						<span>Центральный офис:</span>
+						Екатеринбург
+					</div>
+					<a class="footer-address__link" href="#">Другие офисы</a>
+				</div>
+				<div class="footer-copy">
+					<div class="copy">&copy; 2004-2015</div>
+					<div class="">Все права защищены <a href="#">Карта сайта</a></div>
+				</div>
+				<div class="footer-sociate">
+					<ul>
+						<li><a href="#"><i class="fab fa-vk"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					</ul>
+					<a class="footer-subscribe" href="#">Подписаться на рассылку</a>
+				</div>
+			</div>
+		</div> <!-- /container -->
+	</footer>
+	<script src="build/js/main.js"></script>
+</body>
+</html>

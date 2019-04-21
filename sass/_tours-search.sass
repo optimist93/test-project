@@ -1,0 +1,64 @@
+.tours
+	&-search
+		margin-bottom: 44px
+		&__box
+			padding: 21px 28px 24px 32px
+			background: rgb(75,45,95);
+			background: linear-gradient(to right, rgb(67, 46, 97) 0%, rgb(50, 47, 103) 82%)
+		&__form
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			margin: 0 -8px
+			+pcyr
+			color: #fff
+			.form-control
+				display: flex
+				flex-direction: column
+				width: 305px
+				margin: 0 8px 23px 8px
+				label,
+				input
+					display: block
+				label
+					margin-bottom: 11px
+					font-size: 13px
+				input
+					padding: 0 15px
+				input[type="checkbox"]
+					width: 14px
+					height: 14px
+					margin-right: 3px
+				input,
+				button
+					width: 100%
+					height: 46px
+					border-radius: 5px
+					box-sizing: border-box
+				button
+					margin-top: auto
+					color: #fff
+					background: $red
+					text-transform: uppercase
+					cursor: pointer
+					+trs
+					&:hover
+						background: lighten($red, 5%)
+				.rating
+					display: flex
+					margin-top: 15px
+					ul
+						display: flex
+						margin: 0 22px 0 0
+						padding: 0
+						list-style-type: none
+						li
+							margin-right: 5px
+							color: $star
+							&:hover
+								color: $star-hover
+					.star__item
+						&_select,
+						&_active
+							color: $star-hover
+

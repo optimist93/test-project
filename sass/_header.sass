@@ -1,0 +1,60 @@
+.header
+	position: relative
+	margin-bottom: 23px
+	padding: 32px 0 43px 0
+	background: $header-bg
+	color: #fff
+	.container
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+	&-search
+		margin-right: 23px
+		form
+			position: relative
+			width: 100%
+			box-sizing: border-box
+			input
+				width: 222px
+				height: 46px
+				padding: 0 30px 0 15px
+				border-radius: 5px
+				box-sizing: border-box
+			button
+				position: absolute
+				right: 6px
+				top: 12px
+				width: 22px
+				height: 22px
+				background: url("../img/header/search.png") no-repeat center
+				cursor: pointer
+	&-nav
+		&__list
+			display: flex
+			flex-wrap: wrap
+			margin: 0 -19px
+			padding: 0
+			list-style-type: none
+			li
+				margin: 0 19px
+				a
+					color: #b1c8d7
+					+pcyr
+					text-transform: uppercase
+					text-decoration: none
+					+trs
+					&.current
+						color: #fff
+					&:hover
+						color: #fff
+	&-contact
+		margin-left: auto
+		text-align: right
+		.city
+			margin-bottom: 5px
+			span
+				border-bottom: 1px dotted #fff
+		&__link
+			color: #fff
+			text-decoration: none
+			font-size: 25px

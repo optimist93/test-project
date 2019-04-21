@@ -1,0 +1,37 @@
+// mixin
+=mpreg
+	font-family: 'Myriad Pro Regular'
+=plbold
+	font-family: 'PragmaticaLightC-Bold'
+=plreg
+	font-family: 'PragmaticaLightC-Reg'
+=pcyr
+	font-family: 'Pragmatica-Cyrillic'
+=trs
+	transition: all 0.5s
+
+// colors
+$text-color: #666
+$page-title: #010101
+$header-bg: #434b7d
+$breadcrumbs: #97979e
+$red: #ed1c24
+$star: #e7e7e7
+$star-hover: #fcf01c
+$footer-bg: #353a43
+body
+	color: $text-color
+	font-size: 14px
+	+plreg
+.container
+	max-width: 1054px
+	padding: 0 15px
+	margin: 0 auto
+input,
+button
+	border: none
+	outline: none
+.page-title
+	+plreg
+	color: $page-title
+	font-size: 48px
